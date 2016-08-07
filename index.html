@@ -1,0 +1,66 @@
+
+<html>
+<head>
+<style>
+   #title {font-family:Arial, Helvetica, sans-serif; text-align:center; color:blue}
+</style>
+</head>
+<body>
+<center><img src="wd.jpg" alt="Web Design"></center><hr>
+<table align=right border>
+<script>
+var i= 0;
+var colors=new Array('00', '33', '66', '99' , 'CC', 'FF');
+for (i =0; i <=5 ; i++) {
+document.write("<tr>");
+for (j = 0; j <= 5; j++) {
+for (k = 0; k <= 5; k++) {
+document.write("<td bgcolor=#"+colors[i] +colors[j]+ colors[k]+ "><font color=#" +colors[6]+ colors[j]+ colors[j]+"> "+colors[i] +colors[j]+ colors[k]+ "</td>");
+}
+document.write("</font>");
+document.write("</tr>");
+}
+}
+</script>
+
+</table>
+
+
+<h1 id="title"><font color="red">The</font> 
+<font color="green">Safety</font> <font color="blue">Palette</font></h1>
+<p>The <b>safety palette</b> is a set of 216 different colors that are designed to be
+rendered in their original form by browsers running on the Windows and Macintosh
+operating systems.</p>
+<p>The safety palette is important to ensure accurate color representation in a Web
+page. Colors that cannot be rendered by a browser are <i>dithered</i>, in which
+alternating pixels of similar colors are used, approximating the original color's
+appearance. Dithering can cause images to appear with jagged edges and fuzzy colors. The
+advantage of the safety palette, is that its colors will not require dithering. To
+understand why, we must first review how colors are defined by HTML.</p>
+<p>A specific color is identified by the mixture of the three primary colors: red, green,
+and blue. The intensity of the color is indicated by a numeric value: 0
+for the lowest intensity up to 255 - the highest intensity. A specific color value is
+indicated by a triplet of the red, green, and blue values. For example, the color black has 
+the color triplet: (0, 0, 0). The color white is represented by the color triplet: 
+(255, 255, 255). Yellow, which is an equal mixture of red and green, is equal to the
+color value: (255, 255, 0). The total number of unique colors that can be represented by this 
+system is 255<sup>3</sup>, or 16,581,375. This is more colors than the human eye can 
+distinguish. </p>
+<p>In HTML, these color triplets are represented in <i>hexadecimal</i> values. Hexadecimals
+are numbers from a base-16, rather than base-10, counting system. The numbers 0 through 16
+in base-16 are: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F. The number 17 is represented
+as 10. Under this system, the color white appears as #FFFFFF, since FF is the base-16 
+representation of the number 255. The color yellow would be: #FFFF00.</p>
+<p>Now let's return to the safety palette. The red, green, and blue colors of the safety 
+palette must be equal to one of the following six hexadecimal numbers: 00, 33, 66, 99, CC, or 
+FF. Thus, a color value of #33FF66 would found in the safety palette, but a color value of 
+#33AA44, would not. Since each color has six possible values, there are 6x6x6 or 216 total 
+colors in the safety palette.</p>
+<p>This page shows all of the colors of the safety palette along with their hexadecimal
+color values. Note that the safety palette is only important for monitors that limit their
+color resolution to 256 colors. A monitor that has a higher color resolution will not have
+to employ dithering. With monitors now regularly displaying colors under higher resolutions,
+the importance of the safety palette is not as great as it once was.</p>
+
+</body>
+</html>
